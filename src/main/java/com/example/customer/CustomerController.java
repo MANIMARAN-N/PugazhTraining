@@ -23,7 +23,7 @@ public class CustomerController {
 	CustomerService cuser;
 
 	@PostMapping(value = "/addDetails")
-	public String addCustomer(@RequestBody Customer c) {
+	public String insertCustomer(@RequestBody Customer c) {
 		return cuser.addCustomer(c);
 	}
 
